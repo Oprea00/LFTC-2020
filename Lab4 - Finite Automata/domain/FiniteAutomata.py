@@ -10,8 +10,8 @@ class FiniteAutomata:
     def parse_line(line):
         """
         Read elements between curly brackets and return them in lists.
-        :param line:
-        :return:
+        :param line: string, current line from text file
+        :return: list of chars
         """
         return [element.strip() for element in line.strip().split('=')[1].strip()[1:-1].split(',')]
 

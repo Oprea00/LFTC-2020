@@ -20,145 +20,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="230faf0e-4ea0-4caf-8bf7-e5b1d1dbe36b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab1a/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1a/p1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1a/p1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1a/p1err.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1a/p1err.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1a/p2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1a/p2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1a/p3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1a/p3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1b/Lab1b.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1b/divided/Lexic.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1b/divided/Syntax.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1b/divided/Token.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab1b/minilanugage_specs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/Lab3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/Documentatie.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/tables/HashTable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/tables/SymbolTable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/tables/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/Lab4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/Documentatie.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/Lab3-UML.mdj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/Language_specification.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/p1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/p1err.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/p2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/p3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/program/PIF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/program/Scanner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/program/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/program/language_specs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/tables/HashTable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/tables/SymbolTable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3 - Scanner/tables/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Lab4 - Finite Automata.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Documentatie-Lab4.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Language_specification.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/domain/FiniteAutomata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/fa.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/Lab2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/domain/AdditionThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/domain/GlobalStateVariables.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/domain/MultiplicationThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/domain/Vector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/domain/AdditionThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/domain/GlobalStateVariables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/domain/MultiplicationThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/domain/Vector.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/.idea/description.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/.idea/project-template.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/Lab3 - Thread Pool.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/out/production/Lab3 - Thread Pool/ComputingTask.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/out/production/Lab3 - Thread Pool/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/out/production/Lab3 - Thread Pool/Matrix.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/src/ComputingTask.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/src/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1a/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab1/p1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/p1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/p1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1a/p1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab1/p1err.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/p1err.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/p1err.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1a/p1err.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab1/p2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/p2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/p2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1a/p2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab1/p3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/p3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/Lab1b.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/divided/Lexic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/divided/Syntax.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/divided/Token.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/minilanugage_specs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/Lab3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/Documentatie.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/tables/HashTable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/tables/SymbolTable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/tables/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/Lab4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/Documentatie.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/Lab3-UML.mdj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/Language_specification.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/p1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/p1err.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/p2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/p3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/program/PIF.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/program/Scanner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/program/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/program/language_specs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/tables/HashTable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/tables/SymbolTable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/tables/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/p3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1a/p3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/Lab1b.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1b - Language specification/Lab1b.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/divided/Lexic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1b - Language specification/divided/Lexic.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/divided/Syntax.in" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1b - Language specification/divided/Syntax.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/divided/Token.in" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1b - Language specification/divided/Token.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/minilanugage_specs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1b - Language specification/minilanugage_specs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/Lab3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/Lab3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/Documentatie.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/Documentatie.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/tables/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/tables/HashTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/tables/SymbolTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/tables/SymbolTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/tables/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2 - Symbol Table/tables/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/Lab4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/Lab4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/Documentatie.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/Documentatie-Lab3.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/Lab3-UML.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/Lab3-UML.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/Language_specification.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/Language_specification.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/p1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/p1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/p1err.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/p1err.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/p2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/p2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/p3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/p3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/program/PIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/program/PIF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/program/Scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/program/Scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/program/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/program/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/program/language_specs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/program/language_specs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/tables/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/tables/HashTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/tables/SymbolTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/tables/SymbolTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/tables/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3 - Scanner/tables/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/Lab1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/Lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab4 - Finite Automata.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab3 - Thread Pool/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Old_Lab1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/Lab1_Language_Specification.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/Old_Lab1_Language_Specification.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/app.py" beforeDir="false" />
@@ -166,28 +99,28 @@
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/model/ProgramInternalForm.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/model/Scanner.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/model/Utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Old_Lab1/model/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Old_Lab1/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/tables/HashTable.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/tables/SymbolTable.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Old_Lab1/tables/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/Lab2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/domain/AdditionThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/domain/GlobalStateVariables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/domain/MultiplicationThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/domain/Vector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/domain/AdditionThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/domain/GlobalStateVariables.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/domain/MultiplicationThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/domain/Vector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/project-template.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/Lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/Lab2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/domain/AdditionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/domain/AdditionThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/domain/GlobalStateVariables.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/domain/GlobalStateVariables.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/domain/MultiplicationThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/domain/MultiplicationThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/out/production/Lab2/domain/Vector.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/out/production/Lab2/domain/Vector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/domain/AdditionThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/domain/AdditionThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/domain/GlobalStateVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/domain/GlobalStateVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/domain/MultiplicationThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/domain/MultiplicationThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2/src/domain/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Parallel and Distributed Programming/Lab2 - Producer_Consumer/src/domain/Vector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +191,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604412840584</updated>
-      <workItem from="1604412842074" duration="5029000" />
+      <workItem from="1604412842074" duration="9059000" />
     </task>
     <servers />
   </component>
@@ -312,17 +245,6 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state width="1237" height="325" key="GridCell.Tab.1.right/1280.-54.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1604421890040" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/domain/FiniteAutomata.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Lab4___Finite_Automata$main.coverage" NAME="main Coverage Results" MODIFIED="1604422029959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
