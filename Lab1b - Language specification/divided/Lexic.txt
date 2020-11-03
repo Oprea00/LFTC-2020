@@ -1,0 +1,30 @@
+1. Language Specification
+1.1 Alphabet:
+	1.1.a. Upper (A-Z) and lower case letters (a-z)
+	 1.1.b Decimal digits (0-9)
+Lexic:
+	a.Special symbols, representing:
+		-operators: + - * / = < > <= == >= != && ||
+		-separators: ; {} [] () , space ‘\n’
+		-reserved words: int, char, if, else, while, read, print, list, return
+
+	b.identifiers
+		-sequence of letters and digits such that the first character is a letter
+		-Rule: 
+			identifier = letter [{(letter | digit)}]
+			letter = “A” | “B” | … | “Z” | “a” | “b” | … | “z”
+			digit = “0” | “1” | … | “9”
+
+	c.constants
+		1.integer
+			integerConstant = [ “+” | “-” ] nonzero_digit {digit} | “0”
+			nonzero_digit = “1” | “2” | … | “9”
+			digit = “0” | nonzero_digit
+		2.character
+			character = ‘letter‘ | ‘digit’
+			-these are defined at b
+		3.list of integers
+			list_of_integer = “[“ elements “]”
+			elements = element {“, ”  element}
+			element = integer
+

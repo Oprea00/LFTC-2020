@@ -1,0 +1,30 @@
+2. Syntax:
+	a. Sintactical rules:
+		program = “int main () { “ statementList ” } “
+		statementList = statement ";" { statement ";" }
+		statement = simpleDeclaration | simpleAssignmentStatement | listAssignmentStatement | ioStatement | whileStatement | ifStatement 
+
+		type = “int” | “char” 
+		simpleDeclaration = type identifier “=” expression
+		listDeclaration = “list” identifier “=” list_of_integer
+		simpleAssignmentStatement = identifier “=” expression
+		listIdentifier = identifier "[" identifier | integerConstant "]"
+		constant = integerConstant | character
+
+		ioStatement =  “print “ (identifier | constant | listIdentifier) | “read ” identifier
+		ifStatement = “if (” condition “) {” statementList “}”  {  “else {” statementList “}”  }
+		whileStatement = “while (“ expression “) {“ statementList “}”	
+
+		expression = constantExpression | booleanExpression | arithmeticExpression | identifier | listIdentifier
+		constantExpression = integerConstant | character 
+		arithmeticExpression = expression operator expression
+		operator = “+” | “-” | “*” | “/” 
+		booleanExpression = expression booleanOperator expression
+		booleanOperator = “==” | “<=” | “>=” | “<” | “>” | “!=” | “&&” | “||” 
+
+		
+	b. Lexical rules:
+		identifier = letter [{(letter | digit)}]
+		letter = “A” | “B” | … | “Z” | “a” | “b” | … | “z”
+		digit = “0” | “1” | … | “9”
+

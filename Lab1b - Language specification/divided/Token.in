@@ -1,0 +1,41 @@
+Codification:
+- reserved words: each word has its own code
+- operators: each operator has its own code
+- separators: each separator has its own code
+
+Token type → Code
+	identifier →  0
+	constant →  1
+	+ → 2
+	- → 3
+	* → 4 
+	/ → 5
+	= → 6
+	< → 7
+	> → 8
+	<= → 9
+	== → 10
+	>= → 11 
+	!= → 12
+	&& → 13
+	|| → 14
+	; → 15 
+	{ → 16
+	} → 17
+	( → 18
+	) → 19
+	‘ ‘ → 20   **space not used**
+	'\n' → 21   
+	[ → 22
+	] → 23
+	, → 24
+	int → 25
+	char → 26
+	if → 27
+	else → 28
+	while → 29
+	read → 30
+	print → 31
+	list → 32
+	int_main → 33
+

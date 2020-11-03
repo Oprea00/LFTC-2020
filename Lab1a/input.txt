@@ -1,0 +1,85 @@
+// P1
+// Interchange two identifiers
+int main()
+{
+	int a = 5;
+	int b = 10;
+	int aux = 0;
+	
+	aux = a;
+	a = b;
+	b = aux;
+}
+
+
+// P2
+// Max of two numbers
+// if statement
+int main()
+{
+	int a = 5;
+	int b = 10;
+	int res = 0;
+	char c = 'z';
+	
+	if (a > b) 
+	{
+		print a;
+	}
+	else
+	{
+		print b;
+	}
+}
+
+// P3
+// Sum of vector elements
+// for 🐺️
+int main() 
+{
+	list arr = [1,2,3,4,5];
+	int n = 5;
+	int idx = 0;
+	
+	idx = 0;
+	int sum = 0;
+	while (idx < n) 
+	{
+		sum = sum + arr[idx];
+		idx = idx + 1;
+	}
+
+	print sum;
+}
+
+
+// P.error
+// with lexical errors
+int main() 
+{
+	int a;
+	a = 02x; // Error: constant cannot start with zero
+	int bi~directional = 0; // Error: invalid identifier name
+		
+	
+	char c = 'e; // Error: '' not closed.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+int main()
+{
+	int a = 5;
+	int b = 10;
+	int res = 0;
+	char c = 'z';
+	
+	if (a > b) 
+	{
+		print a;
+	}
+	else
+	{
+		print b;
+	}
+}

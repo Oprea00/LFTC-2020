@@ -1,0 +1,28 @@
+int main() 
+{
+	int a;
+	a = 02x; // Error: constant cannot start with zero
+	int bi~directional = 0; // Error: invalid identifier name
+		
+	
+	char c = 'e; // Error: '' not closed.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

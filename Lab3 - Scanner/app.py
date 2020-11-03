@@ -1,9 +1,6 @@
 from program import language_specs
 from program.Scanner import Scanner
 
-"""
-Lab3 - Week 4
-"""
 
 files = ['p1err.txt', 'p1.txt', 'p2.txt', 'p3.txt']
 
