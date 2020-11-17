@@ -5,11 +5,11 @@ Laboratory 2
 1.1 Alphabet:
 	1.1.a. Upper (A-Z) and lower case letters (a-z)
 	 1.1.b Decimal digits (0-9)
-Lexic:
+Lexicon:
 	a.Special symbols, representing:
 		-operators: + - * / = < > <= == >= != && ||
 		-separators: ; {} [] () , space ‘\n’
-		-reserved words: int, char, if, else, while, read, print, list, return
+		-reserved words: int, char, if, else, while, read, print, list, return, int_main
 
 	b.identifiers
 		-sequence of letters and digits such that the first character is a letter
@@ -32,9 +32,9 @@ Lexic:
 			element = integer
 
 2. Syntax:
-	a. Sintactical rules:
+	a. Syntactical rules:
 		program = “int main () { “ statementList ” } “
-		statementList = statement ";" { statement ";" }
+		statementList = statement ; { statement ; }
 		statement = simpleDeclaration | simpleAssignmentStatement | listAssignmentStatement | ioStatement | whileStatement | ifStatement 
 
 		type = “int” | “char” 
@@ -102,10 +102,6 @@ Token type → Code
 	print → 31
 	list → 32
 	int_main → 33
+    return → 34
 
 
-
-
-
-		
-	
