@@ -4,9 +4,8 @@ from domain.Grammar import Grammar
 def print_command_grammar():
     print("1 -> Set of non-terminals")
     print("2 -> Set of terminals")
-    print("3 -> Set of productions of a non-terminal")
-    print("4 -> Productions of a given terminal")
-    print("5 -> Check if regular")
+    print("3 -> Set of productions")
+    print("4 -> Productions of a given non-terminal")
     print("0 -> Exit")
 
 
@@ -24,7 +23,5 @@ while cmd != 0:
     elif cmd == 4:
         symbol = input("The symbol: ")
         print(grammar.get_productions(symbol))
-    elif cmd == 5:
-        print(grammar.check_regular())
     else:
         break
