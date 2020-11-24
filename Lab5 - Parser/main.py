@@ -5,25 +5,27 @@ from scanner.program.Scanner import Scanner
 
 text_file_grammar = 'text_files/grammars/g2.txt'
 
-
 grammar = Grammar.read_from_file(text_file_grammar)
 cmd = -1
 # cmd = 0
 while cmd != 0:
     Grammar.print_command_grammar()
-    cmd = int(input("Command: "))
-    if cmd == 1:
-        print("The set of non-terminals (N): ", grammar.N)
-    elif cmd == 2:
-        print("The set of terminals (E): ", grammar.E)
-    elif cmd == 3:
-        print("The set of productions (P): ", grammar.P)
-    elif cmd == 4:
-        symbol = input("The symbol: ")
-        print(grammar.get_productions(symbol))
-    else:
+    try:
+        cmd = int(input("Command: "))
+        if cmd == 1:
+            print("The set of non-terminals (N): ", grammar.N)
+        elif cmd == 2:
+            print("The set of terminals (E): ", grammar.E)
+        elif cmd == 3:
+            print("The set of productions (P): ", grammar.P)
+        elif cmd == 4:
+            symbol = input("The symbol: ")
+            print(grammar.get_productions(symbol))
+        else:
+            break
+    except ValueError:
+        print()
         break
-
 
 # Scanner
 uri = 'text_files/code/'
@@ -40,11 +42,10 @@ inputStack = []
 for (code, elem_id) in scanner.pif.pif:
     inputStack += [str(code)]
 
+print()
 # print("Productions: ", grammar.P)
 print(reverse_codification)
-print()
 print(inputStack)
 
 # Parser
 parser = Parser(grammar)
-

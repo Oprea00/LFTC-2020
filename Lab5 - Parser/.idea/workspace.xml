@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e4cd14b8-07cd-42bd-9f73-38eb609d0a89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser_algorithm/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser_algorithm/Parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606218024435</updated>
       <workItem from="1606218025977" duration="534000" />
+      <workItem from="1606219665923" duration="629000" />
     </task>
     <servers />
   </component>
@@ -95,6 +98,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1606218563308">
@@ -115,6 +119,6 @@
     <state width="1493" height="210" key="GridCell.Tab.0.right/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606218563308" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Lab5___Parser$main.coverage" NAME="main Coverage Results" MODIFIED="1606218126391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lab5___Parser$main.coverage" NAME="main Coverage Results" MODIFIED="1606220285932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
