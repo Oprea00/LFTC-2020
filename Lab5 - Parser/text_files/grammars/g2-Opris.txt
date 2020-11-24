@@ -1,0 +1,32 @@
+N = { program, statementList, statement, declarationStatement, type, simpleDeclarationStatement, arrayDeclarationStatement, assignmentStatement, simpleAssignmentStatement, arrayAssignmentStatement, ioStatement, ifStatement, whileStatement, expression, constantExpression, arithmeticExpression, operator, booleanExpression, booleanOperator, indexExpression, indexElement, variableExpression, readStatement, printStatement, printedElement, char, integer, boolean}
+E = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41}
+S = {program, }
+P = {
+    program -> 40 19 statementList 20,
+    statementList -> statement 17 | statement 17 statementList,
+    statement -> declarationStatement | assignmentStatement | ioStatement | whileStatement | ifStatement,
+    declarationStatement -> simpleDeclarationStatement | arrayDeclarationStatement,
+    type -> 30 | 31 | 33 | 41,
+    simpleDeclarationStatement -> 34 0 18 type,
+    arrayDeclarationStatement -> 34 32 0 25 30 26,
+    assignmentStatement -> simpleAssignmentStatement | arrayAssignmentStatement,
+    simpleAssignmentStatement -> 0 6 expression,
+    ioStatement -> printStatement | readStatement,
+    printStatement -> 39 21 printedElement 22,
+    printedElement -> 0 | 1 | expression,
+    readStatement -> 38 21 0 22,
+    ifStatement -> 35 21 expression 22 19 statementList 20 | 35 21 expression 22 19 statementList 20 36 19 statementList 20,
+    whileStatement -> 37 21 expression 20 19 statementList 20,
+    expression -> constantExpression | booleanExpression | arithmeticExpression | variableExpression | indexExpression,
+    constantExpression -> integer | char | boolean,
+    integer -> 1,
+    char -> 1,
+    boolean -> 1,
+    arithmeticExpression -> expression operator expression,
+    operator -> 2 | 3 | 4 | 5 | 7,
+    booleanExpression -> expression booleanOperator expression,
+    booleanOperator -> 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16,
+    indexExpression -> 0 25 indexElement 26,
+    indexElement -> 30 | 0,
+    variableExpression -> 0
+   }

@@ -1,18 +1,16 @@
-from domain.Grammar import Grammar
+from parser_algorithm.Grammar import Grammar
+from parser_algorithm.Parser import Parser
+from scanner.program import language_specs
+from scanner.program.Scanner import Scanner
+
+text_file_grammar = 'text_files/grammars/g2.txt'
 
 
-def print_command_grammar():
-    print("1 -> Set of non-terminals")
-    print("2 -> Set of terminals")
-    print("3 -> Set of productions")
-    print("4 -> Productions of a given non-terminal")
-    print("0 -> Exit")
-
-
-grammar = Grammar.read_from_file('g1.txt')
+grammar = Grammar.read_from_file(text_file_grammar)
 cmd = -1
+# cmd = 0
 while cmd != 0:
-    print_command_grammar()
+    Grammar.print_command_grammar()
     cmd = int(input("Command: "))
     if cmd == 1:
         print("The set of non-terminals (N): ", grammar.N)
@@ -25,3 +23,28 @@ while cmd != 0:
         print(grammar.get_productions(symbol))
     else:
         break
+
+
+# Scanner
+uri = 'text_files/code/'
+files = [uri + 'p1err.txt', uri + 'p1.txt', uri + 'p2.txt', uri + 'p3.txt', uri + 'test.txt']
+scanner = Scanner(files[4])
+scanner.lexical_analysis()
+print("PIF: ", scanner.pif)
+
+# Create reverse lang_specs and prepare stack for the Parser
+reverse_codification = {}
+for key in language_specs.codification:
+    reverse_codification[language_specs.codification[key]] = key
+inputStack = []
+for (code, elem_id) in scanner.pif.pif:
+    inputStack += [str(code)]
+
+# print("Productions: ", grammar.P)
+print(reverse_codification)
+print()
+print(inputStack)
+
+# Parser
+parser = Parser(grammar)
+

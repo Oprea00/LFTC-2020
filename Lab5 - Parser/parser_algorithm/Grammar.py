@@ -1,8 +1,6 @@
-
 class Grammar:
     """
-    Grammar used by the parse tree to check all possible combinations of
-    syntax statements.
+    Grammar used by the parse algorithm to construct the syntax tree.
     """
 
     def __init__(self, N, E, P, S):
@@ -35,9 +33,9 @@ class Grammar:
     @staticmethod
     def parse_line(line):
         """
-        Used in reading from file the initial domain sets: N, E, S
-        :param line:
-        :return: List of characters.
+        Used in reading from file the initial parser_algorithm sets: N, E, S
+        :param line: Line from file.
+        :return: List of strings.
         ex: ['S', 'A', 'B']
         """
         return [element.strip() for element in line.strip().split('=')[1].strip()[1:-1].split(',')]
@@ -72,3 +70,10 @@ class Grammar:
                 result.append(production[1])
         return result
 
+    @staticmethod
+    def print_command_grammar():
+        print("1 -> Set of non-terminals")
+        print("2 -> Set of terminals")
+        print("3 -> Set of productions")
+        print("4 -> Productions of a given non-terminal")
+        print("0 -> Exit")

@@ -1,0 +1,17 @@
+N = { program, statementList, statement, simpleDeclaration, listDeclaration, simpleAssignmentStatement, ioStatement, ifStatement, whileStatement, type, identifier, expression, listIdentifier, listOfInteger, constant, constantExpression, booleanExpression, arithmeticExpression, integerConstant, character, operator, booleanOperator, elements }
+E = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 }
+S = { program, }
+P = {
+	program -> 33 18 19 16 statementList 17,
+	statementList -> statement | statement 15 statementList,
+	statement -> simpleDeclaration | ioStatement,
+
+    simpleDeclaration -> type identifier 6 constant,
+    ioStatement -> 31 identifier | 31 constant | 30 identifier,
+
+	type -> 25 | 26,
+    constant -> integerConstant | character,
+    integerConstant -> 1,
+    character -> 1,
+    identifier -> 0
+}
