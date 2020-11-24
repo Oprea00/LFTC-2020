@@ -1,37 +1,15 @@
-Laboratory LFTC
+Laboratory 2
 2020
-
-1. Finite Automata Specification
-	finite_automata = 
-		"Q = {" states "}" 
-		"E = {" alphabet "}" 
-		"q0 = {" initial_state "}" 
-		"F = {" final_states "}" 
-		"D = { \n" transitions "\n }" 
-
-	states = state {“, ”  state}
-	alphabet = alpha {“, ”  alpha}
-	initial_state = state
-	final_states = state {“, ”  state}
-	transitions = transition {“,”  transition} \n
-
-	state = alpha {alphanumeric}
-	transition = "(" state " " alpha ") - " state
-	alphanumeric = “0” | .. | “9” | alpha
-	alpha = “a” | .. | “z” | “A” | .. | “Z”
-
-
-
 
 1. Language Specification
 1.1 Alphabet:
 	1.1.a. Upper (A-Z) and lower case letters (a-z)
 	 1.1.b Decimal digits (0-9)
-Lexicon:
+Lexic:
 	a.Special symbols, representing:
 		-operators: + - * / = < > <= == >= != && ||
 		-separators: ; {} [] () , space ‘\n’
-		-reserved words: int, char, if, else, while, read, print, list, return, int_main
+		-reserved words: int, char, if, else, while, read, print, list, return
 
 	b.identifiers
 		-sequence of letters and digits such that the first character is a letter
@@ -54,10 +32,10 @@ Lexicon:
 			element = integer
 
 2. Syntax:
-	a. Syntactical rules:
-		program = “int main () { “ statementList ” } “
-		statementList = statement ; { statement ; }
-		statement = simpleDeclaration | simpleAssignmentStatement | listAssignmentStatement | ioStatement | whileStatement | ifStatement 
+	a. Sintactical rules:
+		program = “int_main () { “ statementList ” } “
+		statementList = statement ";" { statement ";" }
+		statement = simpleDeclaration | listDeclaration | simpleAssignmentStatement | ioStatement | whileStatement | ifStatement 
 
 		type = “int” | “char” 
 		simpleDeclaration = type identifier “=” expression
@@ -67,7 +45,7 @@ Lexicon:
 		constant = integerConstant | character
 
 		ioStatement =  “print “ (identifier | constant | listIdentifier) | “read ” identifier
-		ifStatement = “if (” condition “) {” statementList “}”  {  “else {” statementList “}”  }
+		ifStatement = “if (” expression “) {” statementList “}”  {  “else {” statementList “}”  }
 		whileStatement = “while (“ expression “) {“ statementList “}”	
 
 		expression = constantExpression | booleanExpression | arithmeticExpression | identifier | listIdentifier
@@ -124,6 +102,10 @@ Token type → Code
 	print → 31
 	list → 32
 	int_main → 33
-    return → 34
 
 
+
+
+
+		
+	
