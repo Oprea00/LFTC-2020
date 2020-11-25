@@ -4,7 +4,6 @@ S = { program, }
 P = {
 	program -> 33 18 19 16 statementList 17,
 	statementList -> statement | statement 15 statementList,
-! se pune 15 ';'?
 ! ii bn cu statementList si statement unu dupa altu
 	statement -> simpleDeclaration | listDeclaration | simpleAssignmentStatement | ioStatement | ifStatement | whileStatement,
 
@@ -12,8 +11,6 @@ P = {
 	simpleDeclaration -> type identifier 6 expression,
     simpleAssignmentStatement -> type identifier 6 expression,
 	listDeclaration -> 32 identifier 6 listOfInteger,
-! cum se face listOfInteger
-!listIdentifier nush cum ii inlocuit cu symbol table
     listIdentifier -> identifier 22 identifier 23 | identifier 22 integerConstant 23,
 
     ioStatement -> 31 identifier | 31 constant | 31 listIdentifier | 30 identifier,
@@ -28,6 +25,7 @@ P = {
     booleanOperator -> 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14,
 
 	listOfInteger -> 22 elements 23,
+! cum se face listOfInteger
     elements -> integerConstant | elements integerConstant,
     constant -> integerConstant | character,
     integerConstant -> 1,

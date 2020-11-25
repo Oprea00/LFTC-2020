@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e4cd14b8-07cd-42bd-9f73-38eb609d0a89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentatie-Lab5.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentatie-Lab5.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser_algorithm/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser_algorithm/Parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_files/grammars/g2-Socaciu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text_files/grammars/g2-Socaciu.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +35,15 @@
   </component>
   <component name="JupyterTrust" id="4258f7cb-ae9a-417a-a2f3-13284d27167a" />
   <component name="ProjectId" id="1kjddfOQzM1VLyUUweKu55qH12J" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
@@ -81,7 +85,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606218024435</updated>
       <workItem from="1606218025977" duration="534000" />
-      <workItem from="1606219665923" duration="629000" />
+      <workItem from="1606219665923" duration="2265000" />
+      <workItem from="1606235731504" duration="5453000" />
+      <workItem from="1606242424430" duration="730000" />
     </task>
     <servers />
   </component>
@@ -100,25 +106,44 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1606218563308">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1606241240620">
       <screen x="1280" y="-54" width="1536" height="832" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606218563308" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1606218563308">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606241240620" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1606241240620">
       <screen x="1280" y="-54" width="1536" height="832" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606218563308" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1606218563308">
+    <state width="1493" height="195" key="GridCell.Tab.0.center/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606241240620" />
+    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1606241240620">
       <screen x="1280" y="-54" width="1536" height="832" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606218563308" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1606218563308">
+    <state width="1493" height="195" key="GridCell.Tab.0.left/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606241240620" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1606241240620">
       <screen x="1280" y="-54" width="1536" height="832" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606218563308" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606241240620" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1606227267817">
+      <screen x="1280" y="-54" width="1536" height="832" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606227267817" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1606227267817">
+      <screen x="1280" y="-54" width="1536" height="832" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606227267817" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1606227267817">
+      <screen x="1280" y="-54" width="1536" height="832" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606227267817" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1606227267817">
+      <screen x="1280" y="-54" width="1536" height="832" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/1280.-54.1536.832/0.0.1280.984@1280.-54.1536.832" timestamp="1606227267817" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Lab5___Parser$main.coverage" NAME="main Coverage Results" MODIFIED="1606220285932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lab5___Parser$main.coverage" NAME="main Coverage Results" MODIFIED="1606236733349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
