@@ -13,7 +13,8 @@ class Parser:
         """
         Takes a state containing productions.
         :param productions: List of productions for closure
-        :return: closure
+        :return: a state. List of tuples
+        [('S1', ['.', 'S']), ('S', ['.', 'aA']), ('S', ['.', 'bB'])],
         """
         if not productions:
             return None
@@ -35,7 +36,7 @@ class Parser:
                 if B in self.grammar.E:
                     continue
                 for prod in self.grammar.get_productions(B):
-                    # adds item formed from production with dot in front of right hand side of the production
+                    # adds item formed from production with dot in front of rhs of the production
                     dotted_prod = (B, ['.'] + prod)
                     if dotted_prod not in closure:
                         closure += [dotted_prod]
@@ -47,7 +48,7 @@ class Parser:
         Transition from a state to another using a terminal or non-terminal.
         :param state: String
         :param symbol: String
-        :return:
+        :return: a state, list of tuples
         """
         C = []
         # in state search for LR(0) item that has dot in front of symbol
@@ -68,9 +69,13 @@ class Parser:
 
     def get_canonical_collection(self):
         """
-        Construct set of states.
+        Constructs set of states.
         C - canonical collection
-        ex: [('S1', ['.', 'program']), ]
+        ex: [
+        [('S1', ['.', 'S']), ('S', ['.', 'aA']), ('S', ['.', 'bB'])],
+        [('S1', ['S', '.'])],
+        ...
+        ]
         :return: Collection of states
         """
         C = [self.closure([('S1', ['.', self.grammar.S[0]])])]  # augment the grammar
@@ -89,9 +94,13 @@ class Parser:
     def generate_table(self):
         """
         Generates the parsing table used to check the input tokens.
-        :return:
+        A dictionary for each state I ~ the rows
+        :return: parsing table. List of dictionaries containing action and maybe non/terminals
+        [{'action': 'shift', 'S': 1, 'A': 2, 'a': 3, 'b': 4}, {'action': 'acc'},
+        {'action': 'shift', 'A': 6, 'a': 3, 'b': 4}, {'action': 'reduce 2'}, {'action': 'reduce 1'}]
         """
         states = self.get_canonical_collection()
+        self.print_canonical_collection(states)
         table = [{} for _ in range(len(states))]
 
         for index in range(len(states)):
@@ -125,11 +134,13 @@ class Parser:
                 next_state = self.go_to(state, symbol)
                 if next_state in states:
                     table[index][symbol] = states.index(next_state)
-        print(table)
+        # print(table)
         return table
 
     def parse(self, input_string):
         """
+        inputStack - list of strings. PIF code for each token read from txt file.
+        workingStack - used to parse the inputStack
         :param input_string:
         :return:
         """
@@ -138,7 +149,7 @@ class Parser:
         self.inputStack = [char for char in input_string]
         self.output = []
         while len(self.workingStack) != 0:
-            state = int(self.workingStack[-1])  # take the state number from working stack
+            state = int(self.workingStack[-1])  # which dict from parsing table, index of state
             if len(self.inputStack) > 0:
                 char = self.inputStack.pop(0)
             else:
@@ -174,3 +185,13 @@ class Parser:
             production = self.grammar.P[el]
             result.append(production)
         return result
+
+    @staticmethod
+    def print_canonical_collection(cc):
+        """
+        Print in a nicer format
+        """
+        res = "-----------\nCanonical collection: \n"
+        for elem in cc:
+            res += str(elem) + "\n"
+        print(res)

@@ -55,7 +55,7 @@ class Grammar:
             [lhs, rhs] = rule.strip().split('->')
             results = rhs.strip().split('|')
             for res in results:
-                result.append((lhs.strip(), res.strip()))
+                result.append((lhs.strip(), res.split()))
         return result
 
     def get_productions(self, symbol):

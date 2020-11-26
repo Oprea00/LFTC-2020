@@ -3,11 +3,10 @@ from parser_algorithm.Parser import Parser
 from scanner.program import language_specs
 from scanner.program.Scanner import Scanner
 
-text_file_grammar = 'text_files/grammars/g2.txt'
-
+text_file_grammar = 'text_files/grammars/g1.txt'
 grammar = Grammar.read_from_file(text_file_grammar)
 cmd = -1
-# cmd = 0
+cmd = 0
 while cmd != 0:
     Grammar.print_command_grammar()
     try:
@@ -49,3 +48,13 @@ print(inputStack)
 
 # Parser
 parser = Parser(grammar)
+
+print(parser.parse(inputStack))
+# print(parser.parse('abbc'))
+# print(parser.derivationStrings('abbc'))
+# print(parser.derivation_strings(inputStack))
+
+'''
+-check grammar if not ambiguous,
+-resolve DAG conflicts
+'''
