@@ -31,6 +31,5 @@ P = {
     integerConstant -> 1,
     character -> 1,
     identifier -> 0,
-! la consts trebe numa 1?
 
 }

@@ -88,7 +88,6 @@ class Parser:
                     if next_state is not None and next_state not in C:
                         C += [next_state]
                         finished = False
-        print(C)
         return C
 
     def generate_table(self):
@@ -139,14 +138,23 @@ class Parser:
 
     def parse(self, input_string):
         """
+
         inputStack - list of strings. PIF code for each token read from txt file.
+            ['33', '18', '19', '16', '25', '0', '6', '1', '15', '31', '0', '15', '17']
+        table - [{'action': 'shift', 'S': 1, 'A': 2, 'a': 3, 'b': 4}, {'action': 'acc'},
+            {'action': 'shift', 'A': 5, 'a': 3, 'b': 4}, {'action': 'shift', 'A': 6, 'a': 3, 'b': 4},
+            {'action': 'reduce 2'}, {'action': 'reduce 0'}, {'action': 'reduce 1'}]
         workingStack - used to parse the inputStack
-        :param input_string:
-        :return:
+            ['0']
+        :param input_string: list of strings, equal to inputStack
+        :return: output - [0,2,1,1,2]
+        List of integers representing reduce states. Each production rule has a number/reduce_state).
+        Output is the list of steps needed to obtain the input_string starting from starting non-terminal S.
         """
         table = self.generate_table()
         self.workingStack = ['0']
         self.inputStack = [char for char in input_string]
+        # self.inputStack = ['a', 'a', 'b', 'b']
         self.output = []
         while len(self.workingStack) != 0:
             state = int(self.workingStack[-1])  # which dict from parsing table, index of state
@@ -155,15 +163,18 @@ class Parser:
             else:
                 char = None
             if table[state]['action'] == 'shift':
+                # Shift operation on the stack
                 if char not in table[state]:
                     raise (Exception('Cannot parse shift. Character: ', char))
                 self.workingStack.append(char)
                 self.workingStack.append(table[state][char])
             elif table[state]['action'] == 'acc':
+                # Accept operation, sequence is accepted
                 if len(self.inputStack) != 0:
                     raise (Exception('Cannot parse acc'))
                 self.workingStack.clear()
             else:
+                # Reduce operation on the stack
                 reduce_state = int(table[state]['action'].split(' ')[1])
                 reduce_production = self.grammar.P[reduce_state]
                 to_remove_from_working_stack = [symbol for symbol in reduce_production[1]]
@@ -173,6 +184,7 @@ class Parser:
                     self.workingStack.pop()
                 if len(to_remove_from_working_stack) != 0:
                     raise (Exception('Cannot Parse reduce'))
+                self.inputStack.insert(0, char)
                 self.inputStack.insert(0, reduce_production[0])
                 self.output.insert(0, reduce_state)
 

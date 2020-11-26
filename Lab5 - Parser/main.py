@@ -3,7 +3,7 @@ from parser_algorithm.Parser import Parser
 from scanner.program import language_specs
 from scanner.program.Scanner import Scanner
 
-text_file_grammar = 'text_files/grammars/g1.txt'
+text_file_grammar = 'text_files/grammars/g2.txt'
 grammar = Grammar.read_from_file(text_file_grammar)
 cmd = -1
 cmd = 0
@@ -43,18 +43,19 @@ for (code, elem_id) in scanner.pif.pif:
 
 print()
 # print("Productions: ", grammar.P)
-print(reverse_codification)
-print(inputStack)
+# print(reverse_codification)
+# print(inputStack)
 
 # Parser
 parser = Parser(grammar)
 
 print(parser.parse(inputStack))
 # print(parser.parse('abbc'))
-# print(parser.derivationStrings('abbc'))
+print(parser.derivation_strings('abbc'))
 # print(parser.derivation_strings(inputStack))
 
 '''
--check grammar if not ambiguous,
--resolve DAG conflicts
+-remark: print message containing row (state in LR(0)) and column (symbol) where the conflict appears
+
+-check grammar if not ambiguous
 '''
