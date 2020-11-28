@@ -137,7 +137,7 @@ class Parser:
                 next_state = self.go_to(state, symbol)
                 if next_state in states:
                     table[index][symbol] = states.index(next_state)
-        # print(table)
+        # print("table", table)
         return table
 
     def parse(self, input_string):

@@ -51,7 +51,8 @@ output_parser = parser.parse(inputStack)
 parserOutput = ParserOutput(parser)
 
 print(output_parser)
-print(parserOutput.derivation_strings(output_parser))
+parserOutput.print_to_console(output_parser)
+parserOutput.write_to_file(output_parser)
 
 '''
 
