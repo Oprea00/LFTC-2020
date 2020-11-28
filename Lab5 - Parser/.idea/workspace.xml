@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4cd14b8-07cd-42bd-9f73-38eb609d0a89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text_files/parser/derivation_strings.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Lab5 - Parser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab5 - Parser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser_algorithm/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser_algorithm/Parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser_algorithm/ParserOutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser_algorithm/ParserOutput.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$cumentatie-Lab5.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
