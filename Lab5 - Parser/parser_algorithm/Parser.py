@@ -11,6 +11,7 @@ class Parser:
 
     def closure(self, productions):
         """
+        Constructs one clojure of the canonical collections.
         Takes a state containing productions.
         :param productions: List of productions for closure
         :return: a state. List of tuples
@@ -46,6 +47,7 @@ class Parser:
     def go_to(self, state, symbol):
         """
         Transition from a state to another using a terminal or non-terminal.
+        Used in generating parsing table and the canonical collection.
         :param state: String
         :param symbol: String
         :return: a state, list of tuples
@@ -107,6 +109,7 @@ class Parser:
             first_rule_cnt = 0
             second_rule_cnt = 0
             third_rule_cnt = 0
+            beta = []
             for prod in state:
                 dot_index = prod[1].index('.')
                 alpha = prod[1][:dot_index]
@@ -128,7 +131,8 @@ class Parser:
             elif third_rule_cnt == len(state):
                 table[index]['action'] = 'acc'
             else:
-                raise (Exception('Error', state))
+                conflict_msg = 'Conflict! State I' + str(index) + ': ' + str(state) + '\nSymbol: ' + beta[0]
+                raise (Exception(conflict_msg))
             for symbol in self.grammar.N + self.grammar.E:  # the goto part of the table
                 next_state = self.go_to(state, symbol)
                 if next_state in states:
@@ -138,7 +142,6 @@ class Parser:
 
     def parse(self, input_string):
         """
-
         inputStack - list of strings. PIF code for each token read from txt file.
             ['33', '18', '19', '16', '25', '0', '6', '1', '15', '31', '0', '15', '17']
         table - [{'action': 'shift', 'S': 1, 'A': 2, 'a': 3, 'b': 4}, {'action': 'acc'},
@@ -148,13 +151,13 @@ class Parser:
             ['0']
         :param input_string: list of strings, equal to inputStack
         :return: output - [0,2,1,1,2]
+        S -> .. -> aabb
         List of integers representing reduce states. Each production rule has a number/reduce_state).
         Output is the list of steps needed to obtain the input_string starting from starting non-terminal S.
         """
         table = self.generate_table()
         self.workingStack = ['0']
         self.inputStack = [char for char in input_string]
-        # self.inputStack = ['a', 'a', 'b', 'b']
         self.output = []
         while len(self.workingStack) != 0:
             state = int(self.workingStack[-1])  # which dict from parsing table, index of state
@@ -188,15 +191,8 @@ class Parser:
                 self.inputStack.insert(0, reduce_production[0])
                 self.output.insert(0, reduce_state)
 
+        print('Syntax analysis successfully. Yay!')
         return self.output
-
-    def derivation_strings(self, input_string):
-        result = []
-        output = self.parse(input_string)
-        for el in output:
-            production = self.grammar.P[el]
-            result.append(production)
-        return result
 
     @staticmethod
     def print_canonical_collection(cc):

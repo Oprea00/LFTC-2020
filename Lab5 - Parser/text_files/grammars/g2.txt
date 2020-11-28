@@ -1,8 +1,8 @@
-N = { program, statementList, statement, simpleDeclaration, listDeclaration, simpleAssignmentStatement, ioStatement, ifStatement, whileStatement, type, identifier, expression, listIdentifier, listOfInteger, constant, constantExpression, booleanExpression, arithmeticExpression, integerConstant, character, operator, booleanOperator, elements }
-E = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 }
+N = { program, statementList, simpleDeclaration }
+E = { 0, 1, 6, 15, 16, 17, 25 }
 S = { program, }
 P = {
 	program -> 16 statementList 17,
-	statementList -> simpleDeclaration | simpleDeclaration 15 statementList,
+	statementList -> simpleDeclaration 15,
     simpleDeclaration -> 25 0 6 1
 }

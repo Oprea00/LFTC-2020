@@ -1,8 +1,10 @@
 from parser_algorithm.Grammar import Grammar
 from parser_algorithm.Parser import Parser
+from parser_algorithm.ParserOutput import ParserOutput
 from scanner.program import language_specs
 from scanner.program.Scanner import Scanner
 
+# Read Grammar from file
 text_file_grammar = 'text_files/grammars/g2.txt'
 grammar = Grammar.read_from_file(text_file_grammar)
 cmd = -1
@@ -40,22 +42,17 @@ for key in language_specs.codification:
 inputStack = []
 for (code, elem_id) in scanner.pif.pif:
     inputStack += [str(code)]
-
 print()
-# print("Productions: ", grammar.P)
-# print(reverse_codification)
-# print(inputStack)
 
 # Parser
 parser = Parser(grammar)
+# output_parser = parser.parse('aabb')
+output_parser = parser.parse(inputStack)
+parserOutput = ParserOutput(parser)
 
-print(parser.parse(inputStack))
-# print(parser.parse('abbc'))
-print(parser.derivation_strings('abbc'))
-# print(parser.derivation_strings(inputStack))
+print(output_parser)
+print(parserOutput.derivation_strings(output_parser))
 
 '''
--remark: print message containing row (state in LR(0)) and column (symbol) where the conflict appears
 
--check grammar if not ambiguous
 '''
