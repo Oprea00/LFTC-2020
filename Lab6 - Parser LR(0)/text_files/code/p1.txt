@@ -1,0 +1,11 @@
+int_main()
+{
+	int a = 5;
+	int b = 10;
+	int aux = 0;
+	char c = 'z';
+
+	aux = a;
+	a = b;
+	b = aux;
+}

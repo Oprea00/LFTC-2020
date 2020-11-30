@@ -1,0 +1,8 @@
+N = { program, statementList, simpleDeclaration }
+E = { 0, 1, 6, 15, 16, 17, 25 }
+S = { program, }
+P = {
+	program -> 16 statementList 17,
+	statementList -> simpleDeclaration 15,
+    simpleDeclaration -> 25 0 6 1
+}
