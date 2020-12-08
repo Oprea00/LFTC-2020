@@ -101,7 +101,7 @@ class Parser:
         {'action': 'shift', 'A': 6, 'a': 3, 'b': 4}, {'action': 'reduce 2'}, {'action': 'reduce 1'}]
         """
         states = self.get_canonical_collection()
-        self.print_canonical_collection(states)
+        # self.print_canonical_collection(states)
         table = [{} for _ in range(len(states))]
 
         for index in range(len(states)):
@@ -155,43 +155,51 @@ class Parser:
         List of integers representing reduce states. Each production rule has a number/reduce_state).
         Output is the list of steps needed to obtain the input_string starting from starting non-terminal S.
         """
+        print("----------- Syntax analysis -----------")
         table = self.generate_table()
         self.workingStack = ['0']
         self.inputStack = [char for char in input_string]
         self.output = []
-        while len(self.workingStack) != 0:
-            state = int(self.workingStack[-1])  # which dict from parsing table, index of state
-            if len(self.inputStack) > 0:
-                char = self.inputStack.pop(0)
-            else:
-                char = None
-            if table[state]['action'] == 'shift':
-                # Shift operation on the stack
-                if char not in table[state]:
-                    raise (Exception('Cannot parse shift. Character: ', char))
-                self.workingStack.append(char)
-                self.workingStack.append(table[state][char])
-            elif table[state]['action'] == 'acc':
-                # Accept operation, sequence is accepted
-                if len(self.inputStack) != 0:
-                    raise (Exception('Cannot parse acc'))
-                self.workingStack.clear()
-            else:
-                # Reduce operation on the stack
-                reduce_state = int(table[state]['action'].split(' ')[1])
-                reduce_production = self.grammar.P[reduce_state]
-                to_remove_from_working_stack = [symbol for symbol in reduce_production[1]]
-                while len(to_remove_from_working_stack) > 0 and len(self.workingStack) > 0:
-                    if self.workingStack[-1] == to_remove_from_working_stack[-1]:
-                        to_remove_from_working_stack.pop()
-                    self.workingStack.pop()
-                if len(to_remove_from_working_stack) != 0:
-                    raise (Exception('Cannot Parse reduce'))
-                self.inputStack.insert(0, char)
-                self.inputStack.insert(0, reduce_production[0])
-                self.output.insert(0, reduce_state)
-
-        print('Syntax analysis successfully. Yay!')
+        try:
+            print("--------- Parsing ---------")
+            while len(self.workingStack) != 0:
+                state = int(self.workingStack[-1])  # which dict from parsing table, index of state
+                if len(self.inputStack) > 0:
+                    char = self.inputStack.pop(0)
+                else:
+                    char = None
+                if table[state]['action'] == 'shift':
+                    # Shift operation on the stack
+                    if char not in table[state]:
+                        raise (Exception("Syntax error! Expected " + str(table[state]) +
+                                         "!\nCannot parse shift. Character: " + char))
+                    self.workingStack.append(char)
+                    self.workingStack.append(table[state][char])
+                elif table[state]['action'] == 'acc':
+                    # Accept operation, sequence is accepted
+                    if len(self.inputStack) != 0:
+                        raise (Exception("Syntax error! Expected " + str(table[state]) +
+                                         "!\nCannot parse accept. Character: " + char))
+                    self.workingStack.clear()
+                else:
+                    # Reduce operation on the stack
+                    reduce_state = int(table[state]['action'].split(' ')[1])
+                    reduce_production = self.grammar.P[reduce_state]
+                    to_remove_from_working_stack = [symbol for symbol in reduce_production[1]]
+                    while len(to_remove_from_working_stack) > 0 and len(self.workingStack) > 0:
+                        if self.workingStack[-1] == to_remove_from_working_stack[-1]:
+                            to_remove_from_working_stack.pop()
+                        self.workingStack.pop()
+                    if len(to_remove_from_working_stack) != 0:
+                        raise (Exception('Syntax error!' +
+                                         '!\nCannot parse reduce. Character: ', char))
+                    self.inputStack.insert(0, char)
+                    self.inputStack.insert(0, reduce_production[0])
+                    self.output.insert(0, reduce_state)
+            print('Syntax analysis successfully. Yay!')
+        except Exception as ex:
+            raise Exception(ex)
+        print()
         return self.output
 
     @staticmethod
@@ -199,7 +207,7 @@ class Parser:
         """
         Print in a nicer format
         """
-        res = "-----------\nCanonical collection: \n"
+        res = "----------- Canonical Collection -----------\n"
         for elem in cc:
             res += str(elem) + "\n"
         print(res)

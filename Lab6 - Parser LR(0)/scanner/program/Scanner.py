@@ -79,6 +79,7 @@ class Scanner:
         errors = ""
         line_number = 0
         lines_array = self.tokenize()
+        print("----------- Lexical analysis -----------")
         for line in lines_array:
             line_number += 1
             # print("--------------------\nline: ", line)
@@ -100,10 +101,10 @@ class Scanner:
                         self.pif.add(self.get_code_of_token('constant'), pos)
                     else:
                         errors += "Lexical error: line " + str(line_number) + " -> " + ''.join(line) + "\n"
-            # print("\n")
 
         # Check the lexical correctness
         if errors != "":
+            raise Exception(errors)
             print(errors)
             return
         print("Successful lexical analysis.")
